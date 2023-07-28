@@ -1,8 +1,10 @@
 # HN-PRA13-FE-PR1-THAI-HUNG
 PROJECT: WEB MUA BÁN MÁY CÔNG CỤ
 
-I. PHÂN TÍCH GIAO DIỆN 
-    CÁC GIAO DIỆN CHÍNH: 
+#I. PHÂN TÍCH GIAO DIỆN 
+    ##CÁC GIAO DIỆN CHÍNH: 
+
+
         1. HomePage 
             Có layout chuẩn: header, footer 
             - Các component con: 
@@ -11,6 +13,7 @@ I. PHÂN TÍCH GIAO DIỆN
                 1.3 Sản phẩm mới 
                 1.4 Sản phẩm bán chạy 
                 1.5 Hàng mới về
+
         2. AllItemListPage 
             Phần side bar bên trái dùng chung cho cả ALLItemGridPage:
                 - Danh mục sản phẩm
@@ -27,9 +30,11 @@ I. PHÂN TÍCH GIAO DIỆN
                 - button mua ngay 
                 - button xem chi tiết => chuyển tới trang ItemDetailPage
             - Phân trang
+
         3. AllItemGridPage 
             Tương tự trang AllItemGridPage nhưng mỗi Item không có button và mô tả sản phẩm 
             - layout dạng lưới
+
         4. ItemDetailPage 
             Phần side bar dùng chung: 
             - Danh mục sản phẩm 
@@ -44,13 +49,14 @@ I. PHÂN TÍCH GIAO DIỆN
             Phần sản phẩm tương tự: 
                 - list random sản phẩm tương tự (cùng thẻ tag)
 
-
         5. Register 
             Có layout chuẩn: header, footer 
             - form đăng ký
+
         6. Login 
             Có layout chuẩn: header, footer 
             - form đăng nhập
+
         7. AllBlogPage 
              Có layout chuẩn: header, footer 
              Phần side bar dùng chung: 
@@ -60,6 +66,7 @@ I. PHÂN TÍCH GIAO DIỆN
                  - Thẻ tag
             Danh sách bài viết dạng list 
             Phân trang 
+
         8. BlogDetailPage 
              Có layout chuẩn: header, footer 
              Phần side bar dùng chung: 
@@ -79,10 +86,12 @@ I. PHÂN TÍCH GIAO DIỆN
                 - các nút chia sẻ
             Danh sách các bình luận 
             Form bình luận
+
         9. ShoppingCartPage 
             Có layout chuẩn: header, footer 
             List sản phẩm bạn đã thêm vào giỏ hàng(nên có phân trang)
             Form Thanh toán
+            
         10.NotFound
           Có layout chuẩn: header, footer 
 
