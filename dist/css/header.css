@@ -1,0 +1,131 @@
+.login {
+  background-color: #f7f7f7;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.login__header {
+  display: flex;
+  justify-content: space-between;
+}
+.login__social__link {
+  text-decoration: none;
+  padding: 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  cursor: pointer;
+}
+.login__social__link:hover {
+  background-color: #f5bd10;
+  border: none;
+}
+.login__social__icon {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+}
+.login__form--btn {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__contact {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__contact__item {
+  padding-left: 60px;
+}
+.navbar__contact__text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f5bd10;
+}
+.navbar__contact__number {
+  font-size: 13px;
+  color: #999;
+}
+.navbar__search__container {
+  position: relative;
+}
+.navbar__search__input {
+  padding: 0 40px 0 20px;
+  height: 50px;
+  width: 320px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+}
+.navbar__search__icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.menu {
+  background-color: black;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.menu__item {
+  padding: 25px 30px;
+}
+.menu__item:hover {
+  background-color: #f5bd10;
+}
+.menu__link {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+.menu__cart {
+  align-items: center;
+}
+.menu__cart__wrap {
+  position: relative;
+  display: inline-block;
+  padding: 0 8px;
+  cursor: pointer;
+}
+.menu__cart__wrap:hover {
+  display: block;
+}
+.menu__cart__icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 25px;
+}
+.menu__cart__notice {
+  position: absolute;
+  padding: 1px 8px;
+  font-size: 13px;
+  line-height: 1.4rem;
+  color: white;
+  background-color: #f5bd10;
+  border-radius: 20px;
+  right: -4px;
+  top: 10px;
+}
