@@ -1,21 +1,28 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+//Login
 .login{
     background-color: #f7f7f7;
-    height: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
     &__header{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__social{
+        display: flex;
+        justify-content: center;
+
         &__link{
             text-decoration: none;
-            padding: 20px;
+            padding: 15px;
             border-left: 1px solid rgba(0, 0, 0, 0.2);
             border-right: 1px solid rgba(0, 0, 0, 0.2);
-            background-color: transparent;
-            cursor: pointer;
         }
 
         &__link:hover{
@@ -31,6 +38,7 @@
     }
 
     &__form--btn{
+        display: inline-block;
         text-decoration: none;
         color: black;
         padding: 20px;
@@ -40,12 +48,41 @@
         border-right: 1px solid rgba(0, 0, 0, 0.2);
         cursor: pointer;
     }
+    
+    @media (max-width: 767px) {
+        .login{
+            &__header {
+              flex-direction: column;
+            }
+          
+            &__social {
+              display: none;
+            }
+
+            &__form{
+                width: 100%;
+                text-align: center;
+            }
+            
+            &__form--btn{
+                width: 50%;
+                border: none;
+                
+            }
+        }
+    }
 }
 
+  //Navbar
 .navbar{
     background-color: #fff;
-    display: flex;
-    justify-content: space-between;
+
+    &__header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__contact{
         display: flex;
@@ -68,6 +105,8 @@
     }
 
     &__search{
+        text-align: center;
+
         &__container{
             position: relative;
         }
@@ -75,7 +114,7 @@
         &__input{
             padding: 0 40px 0 20px;;
             height: 50px;
-            width: 320px;
+            max-width: 320px;
             border: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 50px;
         }
@@ -91,7 +130,27 @@
             cursor: pointer;
         }
     }
+
+    @media (max-width: 767px) {
+        .navbar{
+            &__header{
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            &__logo{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            &__contact{
+                display: none;
+            }
+        }
+    }
 }
+
+
 
 .menu{
     background-color: black;
@@ -122,6 +181,10 @@
         font-weight: 500;
         color: white;
         // padding: 0 30px;
+    }
+
+    &__toggler{
+        display: none;
     }
 
     &__cart{

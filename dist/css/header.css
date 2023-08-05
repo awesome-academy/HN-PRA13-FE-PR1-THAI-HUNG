@@ -1,19 +1,26 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .login {
   background-color: #f7f7f7;
-  height: 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .login__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.login__social {
+  display: flex;
+  justify-content: center;
 }
 .login__social__link {
   text-decoration: none;
-  padding: 20px;
+  padding: 15px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: transparent;
-  cursor: pointer;
 }
 .login__social__link:hover {
   background-color: #f5bd10;
@@ -25,6 +32,7 @@
   margin: 0px;
 }
 .login__form--btn {
+  display: inline-block;
   text-decoration: none;
   color: black;
   padding: 20px;
@@ -34,11 +42,31 @@
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .login .login__header {
+    flex-direction: column;
+  }
+  .login .login__social {
+    display: none;
+  }
+  .login .login__form {
+    width: 100%;
+    text-align: center;
+  }
+  .login .login__form--btn {
+    width: 50%;
+    border: none;
+  }
+}
 
 .navbar {
   background-color: #fff;
+}
+.navbar__header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar__contact {
   display: flex;
@@ -56,13 +84,16 @@
   font-size: 13px;
   color: #999;
 }
+.navbar__search {
+  text-align: center;
+}
 .navbar__search__container {
   position: relative;
 }
 .navbar__search__input {
   padding: 0 40px 0 20px;
   height: 50px;
-  width: 320px;
+  max-width: 320px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 50px;
 }
@@ -75,6 +106,19 @@
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .navbar .navbar__header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar .navbar__logo {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .navbar .navbar__contact {
+    display: none;
+  }
 }
 
 .menu {
@@ -100,6 +144,9 @@
   text-decoration: none;
   font-weight: 500;
   color: white;
+}
+.menu__toggler {
+  display: none;
 }
 .menu__cart {
   align-items: center;
