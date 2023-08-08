@@ -1,0 +1,45 @@
+mixin blogLetter(image, title, date, creator, amount, desc)
+    .blog__letter 
+        .blog__letter__image
+            img(srcset=image)
+        h3.blog__letter__title=title
+        .blog__letter__release
+            .blog__letter__date=date
+            .blog__letter__creative
+                .blog__letter__icon1
+                    img(srcset="assets/icons/icon1.png")
+                .blog__letter__post Đăng bởi
+                .blog__letter__creator=creator
+            .blog__letter__comment
+                .blog__letter__icon2
+                    img(srcset="assets/icons/icon2.png")
+                .blog__letter__amount=amount
+        p.blog__letter__text=desc
+
+mixin blogLetterDetail(image, title, date, creator, amount)
+    .blog__letter-detail 
+        .blog__letter__image
+            img(srcset=image)
+        h3.blog__letter__title=title
+        .blog__letter__release
+            .blog__letter__date=date
+            .blog__letter__creative
+                .blog__letter__icon1
+                    img(srcset="assets/icons/icon1.png")
+                .blog__letter__post Đăng bởi
+                .blog__letter__creator=creator
+            .blog__letter__comment
+                .blog__letter__icon2
+                    img(srcset="assets/icons/icon2.png")
+                .blog__letter__amount=amount
+
+mixin blogCommentInfor(image, name, date, desc)
+    .blog__comment__infor 
+        .blog__comment__image 
+            img(srcset=image)
+        .blog__comment__letter
+            .blog__comment__name(style="font-weight: 700")=name
+            .blog__comment__status
+                .blog__comment__date(style="font-style: italic; margin: 5px 0")=date
+                a.blog__comment__answer(style="font-style: italic; color: #f5bd10" href="#") Trả lời
+            .blog__comment__text(style="font-size: 13px; font-style: italic")=desc

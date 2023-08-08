@@ -44,12 +44,17 @@
   display: flex;
   flex-wrap: wrap;
 }
+.footer__bank__item {
+  width: 25%;
+  margin: 10px 0;
+}
 .footer__contact {
   display: flex;
   list-style: none;
   padding-left: 0;
   justify-content: space-between;
   text-align: center;
+  margin-top: 30px;
 }
 .footer__contact__item {
   margin-top: 10px;
