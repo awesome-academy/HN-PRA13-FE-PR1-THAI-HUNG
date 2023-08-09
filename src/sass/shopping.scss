@@ -1,0 +1,49 @@
+.shopping{
+    &__cart{
+        margin: 60px 0 100px 0;
+
+        &__pay{
+            margin: 30px 0 20px 0;
+            width: 490px;
+            margin-left: auto;
+            tbody{
+                tr{
+                    td{
+                        font-weight: 700;
+                        vertical-align: middle;
+                        text-align: end;
+                    }
+                }
+            }
+
+            &--active{
+                color: red;
+                font-size: 18px;
+            }
+        }
+
+        &__item {
+            thead{
+                th{
+                    text-align: center;
+                }
+            }
+
+            tbody{
+                tr{
+                    td{
+                        font-weight: 700;
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__select{
+        display: flex;
+        justify-content: flex-end;
+    }
+} 

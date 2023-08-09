@@ -3,8 +3,8 @@
     margin: 0 auto;
 }
 
-//Login
-.login{
+//log
+.log{
     background-color: #f7f7f7;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
@@ -50,7 +50,7 @@
     }
     
     @media (max-width: 767px) {
-        .login{
+        .log{
             &__header {
               flex-direction: column;
             }
@@ -76,6 +76,7 @@
   //Navbar
 .navbar{
     background-color: #fff;
+    padding: 15px;
 
     &__header{
         width: 100%;
@@ -89,7 +90,7 @@
         justify-content: space-between;
 
         &__item{
-            padding-left: 60px;
+            padding: 0 30px;
         }
 
         &__text{
@@ -101,20 +102,30 @@
         &__number{
             font-size: 13px;
             color: #999;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        &__phone{
+            display: block;
+            &:not(:last-child):after{
+                content: "-";
+                margin: 0 5px;
+            }  
         }
     }
 
     &__search{
         text-align: center;
-
+        
         &__container{
             position: relative;
         }
-
+        
         &__input{
+            width: 320px;
             padding: 0 40px 0 20px;;
             height: 50px;
-            max-width: 320px;
             border: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 50px;
         }
@@ -126,7 +137,6 @@
             width: 20px;
             height: 20px;
             transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.2);
             cursor: pointer;
         }
     }
@@ -154,11 +164,16 @@
 
 .menu{
     background-color: black;
-    // height: 70px;
 
     &__header{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    &__collapse{
+        display: none;
+        margin: 0;
     }
 
     &__list{
@@ -180,7 +195,6 @@
         text-decoration: none;
         font-weight: 500;
         color: white;
-        // padding: 0 30px;
     }
 
     &__toggler{
@@ -204,19 +218,33 @@
         &__icon{
             width: 25px;
             height: 25px;
-            margin-top: 25px;
+            color: white;
+            margin: 15px;
+            text-align: center;
         }
 
         &__notice{
             position: absolute;
             padding: 1px 8px;
-            font-size: 13px;
+            font-size: 12px;
             line-height: 1.4rem;
             color: white;
             background-color: #f5bd10;
             border-radius: 20px;
-            right: -4px;
+            right: 10px;
             top: 10px;
+        }
+    }
+
+    @media (max-width: 767px){
+        .menu{
+            &__collapse{
+                display: block;
+            }
+
+            &__list{
+                display: none;
+            }
         }
     }
 }

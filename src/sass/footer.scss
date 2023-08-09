@@ -54,6 +54,7 @@
 
     &__bank{
         display: flex;
+        margin-top: 20px;
         flex-wrap: wrap;
             &__item{
                 width: 25%;
@@ -67,7 +68,6 @@
         padding-left: 0;
         justify-content: space-between;
         text-align: center;
-        margin-top: 30px;
 
         &__item{
             margin-top: 10px;
@@ -103,9 +103,10 @@
 
             &__bank{
                 &__item{
-                    width: 50%;
+                    width: 40%;
+                    margin: 0  10px 10px 0;
                 }
-
+                
                 &__icon{
                     width: 100%;
                 }
@@ -160,6 +161,5 @@
 }
 
 .row{
-    // margin-top: 80px;
     justify-content: space-between;
 }
