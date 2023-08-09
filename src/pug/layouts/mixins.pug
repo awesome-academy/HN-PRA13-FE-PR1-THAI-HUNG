@@ -43,3 +43,23 @@ mixin blogCommentInfor(image, name, date, desc)
                 .blog__comment__date(style="font-style: italic; margin: 5px 0")=date
                 a.blog__comment__answer(style="font-style: italic; color: #f5bd10" href="#") Trả lời
             .blog__comment__text(style="font-size: 13px; font-style: italic")=desc
+
+mixin formInput(heading)
+    .form__input
+        label(for="heading")=heading
+        span.form__required *
+            input(type='text' name='heading' required='')
+
+mixin cartItem(stt, product, infor, price, amount, money)
+    .cart__item
+        tr
+            td(scope='row')=stt
+            td
+                img(srcset=product)
+            td=infor
+            td=price
+            td
+                button.btn=amount
+            td=money
+            td
+                img(srcset="./assets/icons/delete.png")

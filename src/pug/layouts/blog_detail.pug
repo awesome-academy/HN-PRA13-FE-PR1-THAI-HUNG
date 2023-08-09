@@ -1,0 +1,152 @@
+section.blog 
+    .container
+        .move
+            .move__home Trang chủ
+            .move__icon
+                img(srcset="./assets/icons/right.png")
+            .move__page Tin tức
+
+        .blog__overview
+            .row.g-3
+                .col-12.col-lg-3
+                    .blog__product
+                        .blog__product__header.blog__product__header--active
+                            img(style="height: 10px; width: 10px;",srcset="./assets/icons/category.png") 
+                            h3.blog__product__heading DANH MỤC SẢN PHẨM
+                        ul.blog__product__list
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Máy in phun khổ lớn
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Máy quét Canon 3D
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Máy hàn điện Alunima
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Máy khoan Decameta
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Máy phay đa năng CNC                                  
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Máy mài, tiện DC 12V
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Máy khoan, cắt CNC
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Máy quay thông minh N3
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Motor R34C đa dụng
+                            li.blog__product__item
+                                img.blog__product__item__icon(srcset="./assets/icons/list.png")
+                                a.blog__product__item__link(href='#') Máy in laser màu 3D
+
+                    .blog__news
+                        .blog__news__header
+                            img(srcset="./assets/icons/list.png") 
+                            h3.blog__news__heading DANH MỤC TIN TỨC
+                        ul.blog__news__list
+                            li.blog__news__item
+                                a.blog__news__item__link(href='#') Đời sống pháp luật (5)
+                            li.blog__news__item
+                                a.blog__news__item__link(href='#') Kinh tế trong nước (8)
+                            li.blog__news__item
+                                a.blog__news__item__link(href='#') Sức khỏe và gia đình (9)
+                            li.blog__news__item
+                                a.blog__news__item__link(href='#') Công nghệ thông tin (5)
+                            li.blog__news__item
+                                a.blog__news__item__link(href='#') Tin tức khác (2)                             
+
+                    .blog__library
+                        .blog__library__header
+                            img(srcset="./assets/icons/list.png") 
+                            h3.blog__news__heading THƯ VIỆN HÌNH ẢNH
+                        .blog__library__list 
+                            img.blog__library__image(srcset="./assets/images/library1.png")
+                            img.blog__library__image(srcset="./assets/images/library2.png")
+                            img.blog__library__image(srcset="./assets/images/library3.png")
+                            img.blog__library__image(srcset="./assets/images/library4.png")
+                            img.blog__library__image(srcset="./assets/images/library5.png")
+                            img.blog__library__image(srcset="./assets/images/library6.png")
+
+                    .blog__tag
+                        .blog__tag__header
+                            img(srcset="./assets/icons/list.png") 
+                            h3.blog__tag__heading THẺ TAGS
+                        .blog__tag__btn 
+                            button.blog__tag__list.btn.btn--small
+                                a.blog__tag__link(href="#") thời trang
+                            button.blog__tag__list.btn
+                                a.blog__tag__link(href="#") máy khoan
+                            button.blog__tag__list.btn
+                                a.blog__tag__link(href="#") news
+                            button.blog__tag__list.btn
+                                a.blog__tag__link(href="#") công nghiệp
+                            button.blog__tag__list.btn
+                                a.blog__tag__link(href="#") xây dựng
+                            button.blog__tag__list.btn
+                                a.blog__tag__link(href="#") phay
+                            button.blog__tag__list.btn
+                                a.blog__tag__link(href="#") máy cắt
+                            button.blog__tag__list.btn
+                                a.blog__tag__link(href="#") hóa chất
+
+                .col-12.col-lg-9
+                    .blog__details
+                        +blogLetterDetail("./assets/images/blog_detail1.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận")
+                        p "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure."
+                        p "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                        .blog__details__image
+                            img.blog__details__image--small(srcset="./assets/images/blog_detail2.png")
+                        p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+                        p "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                        .blog__details__image
+                            img.blog__details__image--small(srcset="./assets/images/blog_detail3.png")
+                        p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+                        p "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                        p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt
+                        
+                        .blog__details__bottom
+                            .blog__details__tags
+                                .blog__details__tags__container
+                                    span.blog__details__tags__header TAGS:
+                                    span.blog__details__tags__item.blog__details__tags__item--active máy khoan
+                                    span.blog__details__tags__item máy cắt cnc
+                                    span.blog__details__tags__item máy in 3D
+                                    span.blog__details__tags__item công nghiệp
+                                    span.blog__details__tags__item hàn xì
+                                    span.blog__details__tags__item uốn thép
+                            .blog__details__connect
+                                .blog__details__connect__container
+                                    span.blog__details__connect__header CHIA SẺ:
+                                    a.blog__details__connect__link(href="#")
+                                        img.blog__details__connect__icon(srcset="./assets/icons/facebook.png")
+                                    a.blog__details__connect__link(href="#") 
+                                        img.blog__details__connect__icon(srcset="./assets/icons/google-plus.png")
+                                    a.blog__details__connect__link(href="#") 
+                                        img.blog__details__connect__icon(srcset="./assets/icons/instagram.png")
+                                    a.blog__details__connect__link(href="#") 
+                                        img.blog__details__connect__icon(srcset="./assets/icons/twitter.png")
+
+                        .blog__comment 
+                            span(style="font-weight: 700") BÌNH LUẬN:
+                            .blog__comment__list
+                                +blogCommentInfor("./assets/images/comment_image.png", "HOANG TRUONG ANH", " Thứ năm, ngày 23/10/2015 8:00 AM", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.")
+                                .blog__comment__list--active
+                                    +blogCommentInfor("./assets/images/comment_image.png", "HOANG TRUONG ANH", " Thứ năm, ngày 23/10/2015 8:00 AM", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.")
+                                +blogCommentInfor("./assets/images/comment_image.png", "HOANG TRUONG ANH", " Thứ năm, ngày 23/10/2015 8:00 AM", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.")
+
+                        .blog__writecmt
+                            form
+                                .span(style="font-weight: 700") VẾT BÌNH LUẬN CỦA BẠN:
+                                .blog__writecmt__input 
+                                    +formInput("Họ và tên:")
+                                    +formInput("Email:")     
+                                .blog__writecmt__write
+                                    label(for="name") Bình luận:
+                                    textarea(id="comment", name="comment", required)
+                                button.btn.btn--primary(type='submit') GỬI BÌNH LUẬN

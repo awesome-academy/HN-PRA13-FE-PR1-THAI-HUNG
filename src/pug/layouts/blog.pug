@@ -1,5 +1,11 @@
 section.blog 
     .container
+        .move
+            .move__home Trang chủ
+            .move__icon
+                img(srcset="./assets/icons/right.png")
+            .move__page Tin tức
+
         .blog__overview
             .row.g-3
                 .col-12.col-lg-3
@@ -72,7 +78,7 @@ section.blog
                             img(srcset="./assets/icons/list.png") 
                             h3.blog__tag__heading THẺ TAGS
                         .blog__tag__btn 
-                            button.blog__tag__list.btn
+                            button.blog__tag__list.btn.btn--small
                                 a.blog__tag__link(href="#") thời trang
                             button.blog__tag__list.btn
                                 a.blog__tag__link(href="#") máy khoan
@@ -90,83 +96,21 @@ section.blog
                                 a.blog__tag__link(href="#") hóa chất
 
                 .col-12.col-lg-9
-                    //- .blog__compact
-                    //-     +blogLetter("./assets/images/blog_detail1.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận","But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure...") 
-                    //-     +blogLetter("./assets/images/blog_detail2.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận","But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure...") 
-                    //-     +blogLetter("./assets/images/blog_detail3.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận","But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure...") 
-                    //-     +blogLetter("./assets/images/blog_detail4.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận","But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure...") 
+                    .blog__compact
+                        +blogLetter("./assets/images/blog_detail1.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận","But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure...") 
+                        +blogLetter("./assets/images/blog_detail2.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận","But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure...") 
+                        +blogLetter("./assets/images/blog_detail3.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận","But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure...") 
+                        +blogLetter("./assets/images/blog_detail4.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận","But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure...") 
 
-                    //-     .blog__pagination
-                    //-         ul.blog__pagination__list
-                    //-             li.blog__pagination__item
-                    //-                 button.blog__pagination__link.btn(href='') Trang trước
-                    //-             li.blog__pagination__item.blog__pagination__item--active
-                    //-                 button.blog__pagination__link.btn(href='') 1
-                    //-             li.blog__pagination__item
-                    //-                 button.blog__pagination__link.btn(href='') 2
-                    //-             li.blog__pagination__item
-                    //-                 button.blog__pagination__link.btn(href='') 3
-                    //-             li.blog__pagination__item
-                    //-                 button.blog__pagination__link.btn(href='') Trang sau                       
-
-                    .blog__details
-                        +blogLetterDetail("./assets/images/blog_detail1.png", "THẾ HỆ MÁY KHOAN CẮT CNC ĐẦU TIÊN ĐÃ ĐƯỢC TÁI SỬ DỤNG", "Thứ năm,ngày 23/10/2015 8:00 AM","Design Team","12 Bình luận")
-                        p "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure."
-                        p "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-                        .blog__details__image
-                            img.blog__details__image--small(srcset="./assets/images/blog_detail2.png")
-                        p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
-                        p "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-                        .blog__details__image
-                            img.blog__details__image--small(srcset="./assets/images/blog_detail3.png")
-                        p But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
-                        p "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-                        p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt
-                        
-                        .blog__details__bottom
-                            .blog__details__tags
-                                .blog__details__tags__container
-                                    span.blog__details__tags__header TAGS:
-                                    span.blog__details__tags__item.blog__details__tags__item--active máy khoan
-                                    span.blog__details__tags__item máy cắt cnc
-                                    span.blog__details__tags__item máy in 3D
-                                    span.blog__details__tags__item công nghiệp
-                                    span.blog__details__tags__item hàn xì
-                                    span.blog__details__tags__item uốn thép
-                            .blog__details__connect
-                                .blog__details__connect__container
-                                    span.blog__details__connect__header CHIA SẺ:
-                                    a.blog__details__connect__link(href="#")
-                                        img.blog__details__connect__icon(srcset="./assets/icons/facebook.png")
-                                    a.blog__details__connect__link(href="#") 
-                                        img.blog__details__connect__icon(srcset="./assets/icons/google-plus.png")
-                                    a.blog__details__connect__link(href="#") 
-                                        img.blog__details__connect__icon(srcset="./assets/icons/instagram.png")
-                                    a.blog__details__connect__link(href="#") 
-                                        img.blog__details__connect__icon(srcset="./assets/icons/twitter.png")
-
-                        .blog__comment 
-                            span(style="font-weight: 700") BÌNH LUẬN:
-                            .blog__comment__list
-                                +blogCommentInfor("./assets/images/comment_image.png", "HOANG TRUONG ANH", " Thứ năm, ngày 23/10/2015 8:00 AM", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.")
-                                .blog__comment__list--active
-                                    +blogCommentInfor("./assets/images/comment_image.png", "HOANG TRUONG ANH", " Thứ năm, ngày 23/10/2015 8:00 AM", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.")
-                                +blogCommentInfor("./assets/images/comment_image.png", "HOANG TRUONG ANH", " Thứ năm, ngày 23/10/2015 8:00 AM", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.")
-
-                        .blog__writecmt
-                            .span(style="font-weight: 700") VẾT BÌNH LUẬN CỦA BẠN: 
-                            .blog__writecmt__infor
-                                .blog__writecmt__input
-                                    label(for="name") Họ và tên:
-                                    span.blog__writecmt__required *
-                                    form
-                                        input(type='text' name='name' required='')
-                                .blog__writecmt__input 
-                                    label(for="name") Email:
-                                    span.blog__writecmt__required *
-                                    form
-                                        input(type='text' name='email' required='')      
-                            .blog__writecmt__input
-                                label(for="name") Bình luận:
-                                textarea(id="comment", name="comment", required)
-                            button.blog__writecmt__submit-button.btn(type='submit') GỬI BÌNH LUẬN
+                        .blog__pagination
+                            ul.blog__pagination__list
+                                li.blog__pagination__item
+                                    button.blog__pagination__link.btn(href='') Trang trước
+                                li.blog__pagination__item.blog__pagination__item--active
+                                    button.blog__pagination__link.btn(href='') 1
+                                li.blog__pagination__item
+                                    button.blog__pagination__link.btn(href='') 2
+                                li.blog__pagination__item
+                                    button.blog__pagination__link.btn(href='') 3
+                                li.blog__pagination__item
+                                    button.blog__pagination__link.btn(href='') Trang sau

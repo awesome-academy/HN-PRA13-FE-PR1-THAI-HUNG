@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="./assets/css/fontawesome//css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/mixin.css" rel="stylesheet">
+    <link href="./css/global.css" rel="stylesheet">
     <link href="./css/header.css" rel="stylesheet">
     <link href="./css/blog.css" rel="stylesheet">
+    <link href="./css/register.css" rel="stylesheet">
+    <link href="./css/login.css" rel="stylesheet">
+    <link href="./css/error.css" rel="stylesheet">
+    <link href="./css/shopping.css" rel="stylesheet">
     <link href="./css/footer.css" rel="stylesheet">
     <title>Project 1</title>
   </head>
   <body>
     <section class="header"> 
-      <div class="login">
+      <div class="log">
         <div class="container">
-          <div class="login__header">
-            <div class="login__social"><a class="login__social__link" href="#"><img class="login__social__icon" srcset="./assets/icons/facebook.png"></a><a class="login__social__link" href="#"> <img class="login__social__icon" srcset="./assets/icons/google-plus.png"></a><a class="login__social__link" href="#"> <img class="login__social__icon" srcset="./assets/icons/instagram.png"></a><a class="login__social__link" href="#"> <img class="login__social__icon" srcset="./assets/icons/twitter.png"></a></div>
-            <div class="login__form"><a class="login__form--btn" href="#">ĐĂNG KÍ</a><a class="login__form--btn" href="#">ĐĂNG NHẬP</a></div>
+          <div class="log__header">
+            <div class="log__social"><a class="log__social__link" href="#"><img class="log__social__icon" srcset="./assets/icons/facebook.png"></a><a class="log__social__link" href="#"> <img class="log__social__icon" srcset="./assets/icons/google-plus.png"></a><a class="log__social__link" href="#"> <img class="log__social__icon" srcset="./assets/icons/instagram.png"></a><a class="log__social__link" href="#"> <img class="log__social__icon" srcset="./assets/icons/twitter.png"></a></div>
+            <div class="log__form"><a class="log__form--btn" href="#">ĐĂNG KÍ</a><a class="log__form--btn" href="#">ĐĂNG NHẬP</a></div>
           </div>
         </div>
       </div>
@@ -30,11 +36,17 @@
             <div class="navbar__contact">
               <div class="navbar__contact__item">
                 <div class="navbar__contact__text">HOTLINE:</div>
-                <div class="navbar__contact__number">(04) 9500 9650 - (04) 9500 8850</div>
+                <div class="navbar__contact__number">
+                  <div class="navbar__contact__phone">(04) 9500 9650</div>
+                  <div class="navbar__contact__phone">(04) 9500 8850</div>
+                </div>
               </div>
               <div class="navbar__contact__item">
                 <div class="navbar__contact__text">ĐẶT HÀNG NHANH:</div>
-                <div class="navbar__contact__number">(04) 9500 9650 - (04) 9500 8850</div>
+                <div class="navbar__contact__number">
+                  <div class="navbar__contact__phone">(04) 9500 9650</div>
+                  <div class="navbar__contact__phone">(04) 9500 8850</div>
+                </div>
               </div>
             </div>
             <div class="navbar__search">
@@ -46,8 +58,15 @@
         </div>
       </div>
       <div class="menu"> 
-        <div class="container"> 
+        <div class="container">
           <div class="menu__header">
+            <p class="menu__collapse">
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                <svg style="width: 20px; height: 20px; fill: white;" viewBox="0 0 512 512">
+                  <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24-H40"></path>
+                </svg>
+              </button>
+            </p>
             <ul class="menu__list">
               <li class="menu__item"><a class="menu__link active" aria-current="page" href="#">TRANG CHỦ</a></li>
               <li class="menu__item"><a class="menu__link" href="#">GIỚI THIỆU</a></li>
@@ -57,7 +76,9 @@
               <li class="menu__item"><a class="menu__link" href="#">LIÊN HỆ</a></li>
             </ul>
             <div class="menu__cart">
-              <div class="menu__cart__wrap"><img class="menu__cart__icon" srcset="./assets/icons/cart.png"><span class="menu__cart__notice">3</span></div>
+              <div class="menu__cart__wrap">
+                <div class="menu__cart__icon"><i class="fa-solid fa-cart-shopping"></i></div><span class="menu__cart__notice">3</span>
+              </div>
             </div>
           </div>
         </div>
@@ -65,6 +86,11 @@
     </section>
     <section class="blog"> 
       <div class="container">
+        <div class="move">
+          <div class="move__home">Trang chủ</div>
+          <div class="move__icon"><img srcset="./assets/icons/right.png"></div>
+          <div class="move__page">Tin tức</div>
+        </div>
         <div class="blog__overview">
           <div class="row g-3">
             <div class="col-12 col-lg-3">
@@ -108,7 +134,7 @@
                   <h3 class="blog__tag__heading">THẺ TAGS</h3>
                 </div>
                 <div class="blog__tag__btn"> 
-                  <button class="blog__tag__list btn"><a class="blog__tag__link" href="#">thời trang</a></button>
+                  <button class="blog__tag__list btn btn--small"><a class="blog__tag__link" href="#">thời trang</a></button>
                   <button class="blog__tag__list btn"><a class="blog__tag__link" href="#">máy khoan</a></button>
                   <button class="blog__tag__list btn"><a class="blog__tag__link" href="#">news</a></button>
                   <button class="blog__tag__list btn"><a class="blog__tag__link" href="#">công nghiệp</a></button>
@@ -191,26 +217,24 @@
                   </div>
                 </div>
                 <div class="blog__writecmt">
-                  <div class="span" style="font-weight: 700">VẾT BÌNH LUẬN CỦA BẠN: </div>
-                  <div class="blog__writecmt__infor">
-                    <div class="blog__writecmt__input">
-                      <label for="name">Họ và tên:</label><span class="blog__writecmt__required">*</span>
-                      <form>
-                        <input type="text" name="name" required="">
-                      </form>
-                    </div>
+                  <form>
+                    <div class="span" style="font-weight: 700">VẾT BÌNH LUẬN CỦA BẠN:</div>
                     <div class="blog__writecmt__input"> 
-                      <label for="name">Email:</label><span class="blog__writecmt__required">*</span>
-                      <form>
-                        <input type="text" name="email" required="">
-                      </form>
+                      <div class="form__input">
+                        <label for="heading">Họ và tên:</label><span class="form__required">*
+                          <input type="text" name="heading" required=""/></span>
+                      </div>
+                      <div class="form__input">
+                        <label for="heading">Email:</label><span class="form__required">*
+                          <input type="text" name="heading" required=""/></span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="blog__writecmt__input">
-                    <label for="name">Bình luận:</label>
-                    <textarea id="comment" name="comment" required></textarea>
-                  </div>
-                  <button class="blog__writecmt__submit-button btn" type="submit">GỬI BÌNH LUẬN</button>
+                    <div class="blog__writecmt__write">
+                      <label for="name">Bình luận:</label>
+                      <textarea id="comment" name="comment" required></textarea>
+                    </div>
+                    <button class="btn btn--primary" type="submit">GỬI BÌNH LUẬN</button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -346,5 +370,8 @@
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
   </body>
 </html>
