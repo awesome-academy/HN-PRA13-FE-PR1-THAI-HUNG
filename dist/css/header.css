@@ -3,35 +3,35 @@
   margin: 0 auto;
 }
 
-.login {
+.log {
   background-color: #f7f7f7;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-.login__header {
+.log__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.login__social {
+.log__social {
   display: flex;
   justify-content: center;
 }
-.login__social__link {
+.log__social__link {
   text-decoration: none;
   padding: 15px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
-.login__social__link:hover {
+.log__social__link:hover {
   background-color: #f5bd10;
   border: none;
 }
-.login__social__icon {
+.log__social__icon {
   width: 20px;
   height: 20px;
   margin: 0px;
 }
-.login__form--btn {
+.log__form--btn {
   display: inline-block;
   text-decoration: none;
   color: black;
@@ -43,17 +43,17 @@
   cursor: pointer;
 }
 @media (max-width: 767px) {
-  .login .login__header {
+  .log .log__header {
     flex-direction: column;
   }
-  .login .login__social {
+  .log .log__social {
     display: none;
   }
-  .login .login__form {
+  .log .log__form {
     width: 100%;
     text-align: center;
   }
-  .login .login__form--btn {
+  .log .log__form--btn {
     width: 50%;
     border: none;
   }
@@ -61,6 +61,7 @@
 
 .navbar {
   background-color: #fff;
+  padding: 15px;
 }
 .navbar__header {
   width: 100%;
@@ -73,7 +74,7 @@
   justify-content: space-between;
 }
 .navbar__contact__item {
-  padding-left: 60px;
+  padding: 0 30px;
 }
 .navbar__contact__text {
   font-size: 13px;
@@ -83,6 +84,15 @@
 .navbar__contact__number {
   font-size: 13px;
   color: #999;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar__contact__phone {
+  display: block;
+}
+.navbar__contact__phone:not(:last-child):after {
+  content: "-";
+  margin: 0 5px;
 }
 .navbar__search {
   text-align: center;
@@ -91,9 +101,9 @@
   position: relative;
 }
 .navbar__search__input {
+  width: 320px;
   padding: 0 40px 0 20px;
   height: 50px;
-  max-width: 320px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 50px;
 }
@@ -104,7 +114,6 @@
   width: 20px;
   height: 20px;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 @media (max-width: 767px) {
@@ -127,6 +136,11 @@
 .menu__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.menu__collapse {
+  display: none;
+  margin: 0;
 }
 .menu__list {
   list-style: none;
@@ -163,16 +177,26 @@
 .menu__cart__icon {
   width: 25px;
   height: 25px;
-  margin-top: 25px;
+  color: white;
+  margin: 15px;
+  text-align: center;
 }
 .menu__cart__notice {
   position: absolute;
   padding: 1px 8px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4rem;
   color: white;
   background-color: #f5bd10;
   border-radius: 20px;
-  right: -4px;
+  right: 10px;
   top: 10px;
+}
+@media (max-width: 767px) {
+  .menu .menu__collapse {
+    display: block;
+  }
+  .menu .menu__list {
+    display: none;
+  }
 }
