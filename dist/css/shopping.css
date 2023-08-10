@@ -1,0 +1,29 @@
+.shopping__cart {
+  margin: 60px 0 100px 0;
+}
+.shopping__cart__pay {
+  margin: 30px 0 20px 0;
+  width: 490px;
+  margin-left: auto;
+}
+.shopping__cart__pay tbody tr td {
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: end;
+}
+.shopping__cart__pay--active {
+  color: red;
+  font-size: 18px;
+}
+.shopping__cart__item thead th {
+  text-align: center;
+}
+.shopping__cart__item tbody tr td {
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: center;
+}
+.shopping__select {
+  display: flex;
+  justify-content: flex-end;
+}

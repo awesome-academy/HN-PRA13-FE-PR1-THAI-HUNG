@@ -1,0 +1,131 @@
+.footer {
+  background-color: #f7f7f7;
+}
+.footer__about {
+  padding-top: 60px;
+  background-color: #f7f7f7;
+}
+.footer__heading__icon {
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+}
+.footer__heading__text {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  padding-left: 10px;
+  margin: 0;
+}
+.footer__header {
+  display: flex;
+  margin-bottom: 40px;
+}
+.footer__list {
+  padding-left: 0;
+  list-style: none;
+}
+.footer__item__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 36px;
+  color: black;
+}
+.footer__item__icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.footer__connect {
+  padding: 20px 0 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footer__bank {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.footer__bank__item {
+  width: 25%;
+  margin: 10px 0;
+}
+.footer__contact {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  justify-content: space-between;
+  text-align: center;
+}
+.footer__contact__item {
+  margin-top: 10px;
+  padding-left: 0;
+  display: flex;
+}
+.footer__contact__infor {
+  align-items: center;
+  padding: 0 8px;
+}
+.footer__contact__text {
+  font-size: 14px;
+}
+.footer__contact__hotline {
+  color: red;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .footer .footer__about {
+    padding-top: 30px;
+  }
+  .footer .footer__header {
+    margin-bottom: 20px;
+  }
+  .footer .footer__bank__item {
+    width: 40%;
+    margin: 0 10px 10px 0;
+  }
+  .footer .footer__bank__icon {
+    width: 100%;
+  }
+  .footer .footer__contact {
+    flex-direction: column;
+  }
+  .footer .footer__contact__item {
+    margin-top: 30px;
+  }
+}
+
+.design {
+  width: 100%;
+  background-color: black;
+  align-items: center;
+}
+.design__infor {
+  justify-content: space-between;
+}
+.design__creative {
+  display: flex;
+  font-size: 13px;
+}
+.design__advertise {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  font-size: 13px;
+  color: #acacac;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .design .design__creative {
+    align-items: center;
+    flex-direction: column;
+  }
+  .design .design__advertise {
+    margin: 0 53px;
+    flex-wrap: wrap;
+  }
+}
+
+.row {
+  justify-content: space-between;
+}

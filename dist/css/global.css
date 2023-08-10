@@ -1,0 +1,47 @@
+.btn {
+  height: 30px;
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  padding: 0 10px;
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #898989;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--small {
+  background-color: #f5bd10;
+}
+
+.btn--primary {
+  color: white;
+  padding: 20px 33px;
+  background-color: #f5bd10;
+}
+
+.btn--black {
+  color: white;
+  padding: 20px 33px;
+  background-color: #202020;
+}
+
+.move {
+  height: 76px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.move__icon {
+  padding: 0 10px;
+}
+.move__home {
+  color: #898989;
+}
+.move__page {
+  color: black;
+}

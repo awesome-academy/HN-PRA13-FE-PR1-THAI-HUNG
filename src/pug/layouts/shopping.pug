@@ -1,0 +1,41 @@
+section.shopping
+     .container
+        .move
+            .move__home Trang chủ
+            .move__icon
+                img(srcset="./assets/icons/right.png")
+            .move__page Giỏ hàng
+
+        .shopping__cart
+            table.shopping__cart__item.table.table-bordered
+                thead
+                    tr
+                        th(scope='col') STT
+                        th(scope='col') SẢN PHẨM
+                        th(scope='col') THÔNG TIN
+                        th(scope='col') ĐƠN GIÁ 
+                        th(scope='col') SỐ LƯỢNG
+                        th(scope='col') THÀNH TIỀN
+                        th(scope='col') XÓA
+                tbody
+                    +cartItem("1", "./assets/images/shopping_cart1.png", "MÁY KHOAN, CẮT ĐA NĂNG CNC", "2.350.000 đ", "1", "2.350.000 Đ")
+                    +cartItem("2", "./assets/images/shopping_cart2.png", "MÁY KHOAN, CẮT ĐA NĂNG CNC", "2.350.000 đ", "1", "2.350.000 Đ")
+                    +cartItem("3", "./assets/images/shopping_cart3.png", "MÁY KHOAN, CẮT ĐA NĂNG CNC", "2.350.000 đ", "1", "2.350.000 Đ")
+
+            div.shopping__cart__pay
+                table.table.table-bordered 
+                    tbody
+                        tr
+                            td(scope='row') TỔNG TIỀN:
+                            td 6.850.000 Đ
+                        tr
+                            td(scope='row') THUẾ (VAT):
+                            td 670.000 Đ
+                        tr
+                            td(scope='row') THANH TOÁN:
+                            td
+                                span.shopping__cart__pay--active 7.520.000 Đ 
+            
+            .shopping__select
+                button(style="margin-right: 10px").btn.btn--black TIẾP TỤC MUA HÀNG
+                button.btn.btn--primary THANH TOÁN

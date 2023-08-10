@@ -1,0 +1,31 @@
+section.register
+    .container
+        .move
+            .move__home Trang chủ
+            .move__icon
+                img(srcset="./assets/icons/right.png")
+            .move__page Đăng kí
+
+        .register__container 
+            .register__infor
+                span.register__heading THÔNG TIN CÁ NHÂN
+                .register__personal
+                    .register__list
+                        +formInput("Họ và tên:")
+                        +formInput("Email:")
+                    .register__list
+                        +formInput("Số điện thoại:")
+                        +formInput("Địa chỉ:")
+                .register__agree
+                    input(type="checkbox" name="subscribe" value="yes" style="margin-right: 10px") 
+                    | Đăng kí nhận tin nhắn qua email
+
+            .register__infor
+                span.register__heading THÔNG TIN ĐĂNG NHẬP
+                .register__personal
+                    .register__list
+                        +formInput("Họ và tên:")
+                        +formInput("Email:")
+            .register__submit
+                button.btn.btn--black(type='submit') QUAY LẠI
+                button.btn.btn--primary(type='submit') ĐĂNG KÍ

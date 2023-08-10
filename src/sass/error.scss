@@ -1,0 +1,42 @@
+.error{
+    &__container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 55px 0 60px 0;
+    }
+
+    &__notify{
+        display: block;
+        text-align: center;
+    }
+
+    &__header{
+        font-size: 80px;
+        color: #f5bd10;
+    }
+
+    &__text{
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    &__submit{
+        margin-top: 30px;
+    }
+
+    &__image{
+        width:100%;
+        display: block;
+        height: auto;
+    }
+
+    @media screen and (max-width: 1023px){
+        .error{
+            &__image{
+                display: none;
+            }
+        }
+    }
+}

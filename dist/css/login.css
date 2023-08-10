@@ -1,0 +1,28 @@
+.login__container {
+  display: flex;
+  column-gap: 30px;
+  margin: 30px 0 100px 0;
+}
+.login__heading {
+  font-weight: 700;
+}
+.login__personal {
+  margin-top: 45px;
+}
+.login__remind {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.login__forget__link {
+  font-style: italic;
+  color: #f5bd10;
+}
+@media (max-width: 767px) {
+  .login .login__container {
+    flex-wrap: wrap;
+  }
+  .login .login__noaccount {
+    margin-top: 50px;
+  }
+}
